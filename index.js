@@ -1,4 +1,4 @@
-const icons = require('./dist/icons.json');
+const icons = require('./public/icons.json');
 const iconNameList = [...new Set(Object.keys(icons).map(i => i.split('-')[0]))];
 const shortNames = {
   javascript: 'javascript',
