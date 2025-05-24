@@ -58,7 +58,7 @@ async function handleRequest(request) {
 
   const path = pathname.replace(/^\/|\/$/g, '');
 
-  if (path === 'icons') {
+  if (path === 'options') {
     const iconParam = searchParams.get('i') || searchParams.get('icons');
     if (!iconParam)
       return new Response("You didn't specify any icons!", { status: 400 });
